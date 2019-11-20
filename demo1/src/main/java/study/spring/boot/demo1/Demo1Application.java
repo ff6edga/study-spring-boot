@@ -19,11 +19,11 @@ public class Demo1Application {
 		application.run(args);
 	}
 
-	@Bean
-	public Holoman holoman() {
-		Holoman holoman = new Holoman();
-		holoman.setName("whiteship");
-		holoman.setHowLong(60);
-		return holoman;
-	}
+//	@Bean
+//	public Holoman holoman() {
+//		Holoman holoman = new Holoman();
+//		holoman.setName("whiteship");
+//		holoman.setHowLong(60);
+//		return holoman;
+//	}
 }
