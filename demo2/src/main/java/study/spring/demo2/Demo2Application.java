@@ -14,20 +14,9 @@ public class Demo2Application {
 		return "hello string";
 	}
 	public static void main(String[] args) {
-		SpringApplication.run(Demo2Application.class, args);
+		SpringApplication app = new SpringApplication(Demo2Application.class);
+		//app.addListeners(new SampleListener());
+		app.run(args);
 	}
 
-// 커넥터 추가하는 법.
-//	@Bean
-//	public ServletWebServerFactory serverFactory() {
-//		TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory();
-//		tomcat.addAdditionalTomcatConnectors(createStandardConnector());
-//		return tomcat;
-//	}
-//
-//	private Connector createStandardConnector() {
-//		Connector connector = new Connector("org.apache.coyote.http11.Http11NioProtocol");
-//		connector.setPort(8080);
-//		return connector;
-//	}
 }
