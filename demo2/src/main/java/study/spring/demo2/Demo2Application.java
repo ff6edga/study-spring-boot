@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Demo2Application {
 	public static void main(String[] args) {
 		SpringApplication app = new SpringApplication(Demo2Application.class);
+		app.setWebApplicationType(WebApplicationType.NONE);
 		app.run(args);
 	}
 }
