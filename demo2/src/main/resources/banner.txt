@@ -1,3 +1,0 @@
-======================
-Younsoo Spring Boot ${application.version}
-======================
