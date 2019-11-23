@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Demo2Application {
 	public static void main(String[] args) {
 		SpringApplication app = new SpringApplication(Demo2Application.class);
-		app.setWebApplicationType(WebApplicationType.NONE);
+		//app.setWebApplicationType(WebApplicationType.NONE);
 		app.run(args);
 	}
 }

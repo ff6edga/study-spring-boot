@@ -20,9 +20,9 @@ public class Demo2Runner implements ApplicationRunner {
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		System.out.println("=====================");
-		System.out.println(props.getName());
-		System.out.println(props.getFullName());
-		System.out.println("=====================");
+		logger.debug("=====================");
+		logger.debug(props.getName());
+		logger.debug(props.getFullName());
+		logger.debug("=====================");
 	}
 }
